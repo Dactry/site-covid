@@ -1,0 +1,275 @@
+:root {
+    --accent: #FB4C47;
+    --title: #035755;
+    --text: #4B4F51;
+}
+
+
+html {font-size: 100%;} /*24px*/
+
+body {
+  font-family: 'Questrial', 'Red Hat Display', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header {
+    background-image: url(/img/illustration.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 1061px;
+}
+
+@media (min-width: 1500px){
+    .main-container {
+        max-width: 1440px;
+    }
+}
+
+.header__nav {
+    padding-top: 31px;
+    margin-bottom: 320px;
+}
+
+.nav__item {
+    margin-left: 40px;
+    font-size: 1.125em;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.nav__item:hover {
+    color: var(--accent);
+
+
+}
+
+.button {
+    padding: 16px 45px;
+    background-color: var(--accent);
+    border-radius: 65px;
+    border: none;
+    color: #fff;
+}
+
+.nav__button {
+    font-size: 1.125em;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    background-color: #fff;
+}
+
+/* ==============NAV=========== */
+
+.main__title {
+    margin-bottom: 29px;
+}
+
+.title {
+    font-size: 3.125em;
+    color: var(--title)
+}
+
+.title--accent {
+    color: var(--accent);
+    font-size: 32px;
+}
+
+.text {
+    color: var(--text);
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+.main__text {
+    margin-bottom: 54px;
+}
+
+.main__button {
+    font-weight: 700;
+    margin-bottom: 207px;
+}
+
+/* ==============MAIN=========== */
+
+.about__picture {
+    position: absolute;
+    top: -67px;
+    left: -207px;
+    z-index: -1;
+}
+
+.about__desc {
+    padding: 100px 0 188px 50px;
+}
+
+.about__button {
+    margin-top: 56px;
+    font-weight: 700;
+    color: var(--accent);
+    background-color: rgba(250, 86, 82, 0.15); 
+}
+
+.about__text {
+    font-size: 1.25em;
+    line-height: 2;
+}
+
+.about__covid {
+    position: absolute;
+    bottom: -70px;
+    right: -400px;
+}
+
+/* ==============ABOUT=========== */
+
+
+.contagion__desc {
+
+}
+
+.section-inner {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 31px;
+}
+
+.section-text {
+    font-size: 1.125em;
+    line-height: 2;
+    text-transform: capitalize;
+}
+
+.contagion__card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 148px;
+    margin-top: 111px;
+}
+
+.contagion__card-item {
+    text-align: center;
+    width: 27em;
+    padding: 65px 42px;
+
+    margin: 15px 15px;
+
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+}
+
+.card__img {
+    margin-bottom: 54px;
+}
+
+.card__title {
+    color: var(--title);
+    margin-bottom: 13px;
+}
+
+.card__text {
+    color: var(--text);
+    font-size: 1.125em;
+    text-transform: capitalize;
+    line-height: 1.9;
+}
+.contagion__image {
+    position: absolute;
+
+    left: -122px;
+    bottom: 18px;
+    z-index: -1;
+}
+
+/* ==============CONTAGION=========== */
+
+.symptoms__image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-bottom: 117px;
+}
+
+/* ==============SYMPTOMS=========== */
+
+ol{
+    counter-reset: myCounter;
+  }
+  
+  li{
+    list-style: none;
+    position: relative;
+  }
+  
+  li:before {
+    font-family: 'Red Hat Display', sans-serif;
+
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    color: #FA5652;
+    font-size: 44px;
+    font-weight: 700;
+    background:#FEE6E5;
+    ;
+    display: inline-grid;
+    text-align: center;
+    line-height: 40px;
+    width: 75px;
+    height: 75px;
+    border-radius: 40px;
+    align-items: center;
+    position: absolute;
+    left: -120px;
+    top: 195px;
+  }
+
+.what__list {
+    
+}
+
+.what__item {
+    display: flex;
+    align-items: center;
+}
+
+.wahat__content {
+
+}
+
+.what__item-title {
+    font-size: 47px;
+    text-transform: capitalize;
+    
+}
+
+.what__item-text {
+
+}
+
+.what__item-image {
+
+}
