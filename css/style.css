@@ -38,6 +38,35 @@ ul {
     list-style: none;
 }
 
+.title {
+    font-size: 3.125em;
+    color: var(--title);
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 2.125em;
+        color: var(--title);
+        line-height: 1.3;
+        text-transform: capitalize;
+    }
+}
+
+.title--accent {
+    color: var(--accent);
+    font-size: 32px;
+}
+
+.text {
+    color: var(--text);
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 2;
+}
+
+
 .header {
     background-image: url(/img/illustration.jpg);
     background-repeat: no-repeat;
@@ -58,8 +87,29 @@ ul {
     margin-bottom: 320px;
 }
 
+@media (max-width: 767px) {
+    .header__nav {
+        margin-bottom: 70px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .header__logo {
+        margin-bottom: 50px;
+    }
+}
+
 .nav__item {
     margin-right: 40px;
+}
+
+
+@media (max-width: 767px) {
+    .nav__item {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
 }
 
 .nav__item:last-child {
@@ -101,25 +151,6 @@ ul {
     margin-bottom: 29px;
 }
 
-.title {
-    font-size: 3.125em;
-    color: var(--title);
-    line-height: 1.3;
-    text-transform: capitalize;
-}
-
-.title--accent {
-    color: var(--accent);
-    font-size: 32px;
-}
-
-.text {
-    color: var(--text);
-    font-size: 18px;
-    text-transform: capitalize;
-    line-height: 2;
-}
-
 .main__text {
     margin-bottom: 54px;
 }
@@ -135,12 +166,14 @@ ul {
     position: relative;
 }
 
-.about__picture {
-    margin-left: -150px;
-}
-
 .about__content {
     padding-left: 50px;
+}
+
+@media (max-width: 991px) {
+    .about__content {
+        padding-left: 0px;
+    }
 }
 
 .about__button {
@@ -155,12 +188,24 @@ ul {
     line-height: 2;
 }
 
+@media (max-width: 767px) {
+    .about__text {
+        font-size: 0.8em;
+        line-height: 1.5;
+    }
+}
+
 .about__covid {
     position: absolute;
     bottom: -140px;
     right: -153px;
 }
 
+@media (max-width: 991px) {
+    .about__picture {
+        display: none;
+    }
+}
 /* ==============ABOUT=========== */
 
 .section-title {
@@ -280,6 +325,10 @@ ul {
 
 /* ==============REPORTS=========== */
 
+.subscribe {
+    overflow: hidden;
+}
+
 .subscribe__inner {
     position: relative;
     margin-bottom: 143px;
@@ -315,11 +364,4 @@ ul {
     bottom: -146px;
     right: -487px;
     z-index: -1;
-}
-.nav__sotial {
-}
-
-.sotial__link {
-}
-.sotial__image {
 }
