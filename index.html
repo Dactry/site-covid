@@ -16,25 +16,35 @@
 <body>
   <header class="header">
     <div class="container main-container">
-      <nav class="d-flex justify-content-between align-items-center header__nav">
-        <img src="img/Logo.svg" alt="site-logo" class="header__logo">
-        <ul class="nav__list d-flex align-items-center ">
-          <li class="nav__item">Overview</li>
-          <li class="nav__item">Contagion</li>
-          <li class="nav__item">Symptoms</li>
-          <li class="nav__item">Prevention</li>
-          <li class="nav__item">
-            <button class="button nav__button">Contact</button>
-          </li>
-        </ul>
+      <nav class="header__nav">
+        <div class="row align-items-center">
+          <div class="col-lg-2 col-md-12">
+            <a href="#">
+              <img src="img/Logo.svg" alt="site-logo" class="header__logo">
+            </a>
+          </div>
+          <div class="col-lg-10 col-md-12 d-flex justify-content-md-end">
+            <ul class="nav__list d-md-flex align-items-center ">
+              <li class="nav__item"><a class="nav__link text" href="#">Overview</a></li>
+              <li class="nav__item"><a class="nav__link text" href="#">Contagion</a></li>
+              <li class="nav__item"><a class="nav__link text" href="#">Symptoms</a></li>
+              <li class="nav__item"><a class="nav__link text" href="#">Prevention</a></li>
+              <li>
+                <button class="button nav__button">Contact</button>
+              </li>
+            </ul>
+          </div>  
+        </div> 
       </nav>
-      <div class="main col-8 col-lg-8 col-xxl-6">
-        <h1 class="main__title title"><span class="title--accent">COVID-19 Alert</span> <br>
-          Stay At Home Quarantine
-          To stop Corona virus</h1>
-        <p class="main__text text">There is no specific medicine to prevent or treat coronavirus disease (COVID-19).
-          People may need supportive care to .</p>
-        <button class="button main__button">Let Us Help</button>
+      <div class="row">
+        <div class="col-8 col-lg-8 col-xxl-6">
+          <h1 class="main__title title"><span class="title--accent">COVID-19 Alert</span> <br>
+            Stay At Home Quarantine
+            To stop Corona virus</h1>
+          <p class="main__text text">There is no specific medicine to prevent or treat coronavirus disease (COVID-19).
+            People may need supportive care to .</p>
+          <button class="button main__button">Let Us Help</button>
+        </div>
       </div>
     </div>
   </header>
@@ -43,18 +53,21 @@
 
   <section class="about">
     <div class="container main-container">
-      <div class="about__content position-relative d-flex align-items-end flex-column">
-        <img src="/img/covid1.png" alt="picture-virus" class="about__picture">
-        <div class="about__desc col-6 ms-auto">
-          <h2 class="title about__title"><span class="title--accent">What Is Covid-19</span> <br>
-            Coronavirus</h2>
-          <div class="text about__text">Corona viruses are a type of virus. There are many different kinds, and some
-            cause disease. A newly identified type has caused a recent outbreak of respiratory illness now called
-            COVID-19.Lauren Sauer, M.S., the director of operations with the Johns Hopkins Office of Critical Event
-            Preparedness and Response</div>
-          <button class="button about__button">Learn More</button>
+      <div class="row align-items-center">
+        <div class="col-6">
+          <img src="/img/covid1.png" alt="picture-virus" class="about__picture">
         </div>
-        <img src="/img/covid2.png" alt="picture-covid" class="about__covid">
+        <div class="col-6">
+          <div class="about__content">
+            <h2 class="title about__title"><span class="title--accent">What Is Covid-19</span> <br>
+              Coronavirus</h2>
+            <div class="text about__text">Corona viruses are a type of virus. There are many different kinds, and some
+              cause disease. A newly identified type has caused a recent outbreak of respiratory illness now called
+              COVID-19.Lauren Sauer, M.S., the director of operations with the Johns Hopkins Office of Critical Event
+              Preparedness and Response</div>
+            <button class="button about__button">Learn More</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -63,8 +76,8 @@
 
   <section class="contagion">
     <div class="container main-container">
-      <div class="contagion__desc">
-        <div class="section-inner">
+      <div class="row justify-content-center text-center">
+        <div class="col-6">
           <h3 class="title section-title"><span class="title--accent">Covid-19</span> <br>
             Contagion</h3>
           <p class="text section-text">Corona viruses are a type of virus. There are many different kinds, and some
@@ -72,24 +85,33 @@
         </div>
       </div>
       <div class="contagion__card">
-        <div class="contagion__card-item">
-          <img src="/img/Card1.png" alt="card-image" class="card__img">
-          <h3 class="card__title">Air Transmission</h3>
-          <p class="card__text">Objectively evolve tactical expertise before extensible initiatives. Efficiently
-            simplify</p>
-        </div>
-        <div class="contagion__card-item">
-          <img src="/img/Card2.png" alt="card-image" class="card__img">
-          <h3 class="card__title">Human Contacts</h3>
-          <p class="card__text">Washing your hands is one of thesimplest ways you can protect</p>
-        </div>
-        <div class="contagion__card-item">
-          <img src="/img/Card3.png" alt="card-image" class="card__img">
-          <h3 class="card__title">Containted Objects</h3>
-          <p class="card__text">Use the tissue while sneezing,In this way, you can protect your droplets.</p>
+        <div class="row text-center">
+          <div class="col-4">
+            <div class="contagion__card-item">
+              <img src="/img/Card1.png" alt="card-image" class="card__img">
+              <h3 class="card__title">Air Transmission</h3>
+              <p class="card__text">Objectively evolve tactical expertise before extensible initiatives. Efficiently
+                simplify</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="contagion__card-item">
+              <img src="/img/Card2.png" alt="card-image" class="card__img">
+              <h3 class="card__title">Human Contacts</h3>
+              <p class="card__text">Washing your hands is one of thesimplest ways you can protect</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="contagion__card-item">
+              <img src="/img/Card3.png" alt="card-image" class="card__img">
+              <h3 class="card__title">Containted Objects</h3>
+              <p class="card__text">Use the tissue while sneezing,In this way, you can protect your droplets.</p>
+            </div>
+          </div>
         </div>
         <img src="/img/covid3.png" alt="" class="contagion__image">
       </div>
+
     </div>
   </section>
 
@@ -97,10 +119,14 @@
 
   <section class="symptoms">
     <div class="container main-container">
-      <div class="section-inner">
-        <h3 class="title section-title"><span class="title--accent">Covid-19</span> <br>
-          Symptomps</h3>
-        <p class="text section-text">Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified type has caused a recent outbreak of respiratory </p>
+      <div class="row justify-content-center text-center">
+        <div class="col-6">
+          <h3 class="title section-title"><span class="title--accent">Covid-19</span> <br>
+            Symptomps</h3>
+          <p class="text section-text">Corona viruses are a type of virus. There are many different kinds, and some
+            cause
+            disease. A newly identified type has caused a recent outbreak of respiratory </p>
+        </div>
       </div>
       <img src="/img/symptoms-image.jpg" alt="" class="symptoms__image">
     </div>
@@ -110,47 +136,163 @@
 
   <section class="what">
     <div class="container main-container">
-      <div class="section-inner">
-        <h3 class="title section-title"><span class="title--accent">Covid-19</span> <br>
-          What  should we do</h3>
-        <p class="text section-text">Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified type has caused</p>
+      <div class="row justify-content-center text-center">
+        <div class="col-6">
+          <h3 class="title section-title"><span class="title--accent">Covid-19</span> <br>
+            What should we do</h3>
+          <p class="text section-text">Corona viruses are a type of virus. There are many different kinds, and some
+            cause
+            disease. A newly identified type has caused</p>
+        </div>
       </div>
-      <ol class="what__list">
-        <li class="what__item">
-          <div class="wahat__content col-6">
-            <h4 class="what__item-title">wear masks</h4>
-            <p class="what__item-text text">Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic "outside the box" thinking. Objectively </p>
-          </div>
-          <img src="img/girl1.jpg" alt="image-girl" class="what__item-image">
-        </li>
 
-        <li class="what__item">
-          <div class="wahat__content col-6">
-            <h4 class="what__item-title">Wash Your Hands</h4>
-            <p class="what__item-text text">Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic "outside the box" thinking. Objectively Continually seize impactful vortals </p>
+      <div class="what__content">
+        <div class="row row--order align-items-center justify-content-between">
+          <div class="col-6">
+            <div class="what__item" data-counter="01">
+              <h4 class="title what__item-title">wear masks</h4>
+              <p class="what__item-text text">Continually seize impactful vortals rather than future-proof supply
+                chains.
+                Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards compliant
+                leadership skills vis-a-vis pandemic "outside the box" thinking. Objectively </p>
+            </div>
           </div>
-          <img src="img/girl2.jpg" alt="image-girl" class="what__item-image">
-        </li>
-
-        <li class="what__item">
-          <div class="wahat__content col-6">
-            <h4 class="what__item-title">Use nose -  rag</h4>
-            <p class="what__item-text text">Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic "outside the box" thinking. Objectively </p>
+          <div class="col-6">
+            <img src="img/girl1.jpg" alt="image-girl" class="what__item-image">
           </div>
-          <img src="img/girl3.jpg" alt="image-girl" class="what__item-image">
-        </li>
+        </div>
 
-        <li class="what__item">
-          <div class="wahat__content col-6">
-            <h4 class="what__item-title">Avoid contacts</h4>
-            <p class="what__item-text text">Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic</p>
+        <div class="row row--order align-items-center justify-content-between">
+          <div class="col-6">
+            <div class="what__item" data-counter="02">
+              <h4 class="title what__item-title">Wash Your Hands</h4>
+              <p class="what__item-text text">Continually seize impactful vortals rather than future-proof supply
+                chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards
+                compliant leadership skills vis-a-vis pandemic "outside the box" thinking. Objectively Continually seize
+                impactful vortals </p>
+            </div>
           </div>
-          <img src="img/girl4.jpg" alt="image-girl" class="what__item-image">
-        </li>
+          <div class="col-6">
+            <img src="img/girl2.jpg" alt="image-girl" class="what__item-image">
+          </div>
+        </div>
 
-      </ol>
+        <div class="row row--order align-items-center justify-content-between">
+          <div class="col-6">
+            <div class="what__item" data-counter="03">
+              <h4 class="title what__item-title">Use nose - rag</h4>
+              <p class="what__item-text text">Continually seize impactful vortals rather than future-proof supply
+                chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards
+                compliant leadership skills vis-a-vis pandemic "outside the box" thinking. Objectively </p>
+            </div>
+          </div>
+          <div class="col-6">
+            <img src="img/girl3.jpg" alt="image-girl" class="what__item-image">
+          </div>
+        </div>
+
+        <div class="row row--order align-items-center justify-content-between">
+          <div class="col-6">
+            <div class="what__item" data-counter="04">
+              <h4 class="title what__item-title">Avoid contacts</h4>
+              <p class="what__item-text text">Continually seize impactful vortals rather than future-proof supply
+                chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards
+                compliant leadership skills vis-a-vis pandemic</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <img src="img/girl4.jpg" alt="image-girl" class="what__item-image">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- ------------------------------------------WHAT--------------------------------------------- -->
+
+  <section class="reports">
+    <div class="container main-container">
+      <div class="row justify-content-between">
+        <div class="col-7">
+          <img src="/img/Map.jpg" alt="world-map" class="repots__image">
+        </div>
+        <div class="col-5">
+          <img src="/img/Liver Reports.jpg" alt="exchange-rate" class="repots__image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------REPORTS--------------------------------------------- -->
+
+  <section class="subscribe">
+    <div class="container main-container">
+      <div class="subscribe__inner">
+        <div class="row justify-content-center text-center">
+          <div class="col-7">
+            <h2 class="subscribe__title">Have Question in mind?
+              Let us help you</h2>
+          </div>
+        </div>
+  
+        <div class="row justify-content-center">
+          <div class="col-7">
+            <div class="input">
+              <input type="text" class="subscribe__form" placeholder="snmonydemo@gmail.com"
+                aria-label="snmonydemo@gmail.com" aria-describedby="">
+              <button class="button subscribe__botton" type="button">Send</button>
+            </div>
+          </div>
+        </div>
+        <img src="/img/Path3.jpg" alt="" class="subscribe__image">
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------SUBSCRIBE--------------------------------------------- -->
+
+  <footer class="footer">
+    <div class="container main-container">
+      <nav class="footer__nav">
+        <div class="row align-items-center">
+          <div class="col-2">
+            <a href="#">
+              <img src="img/Logo.svg" alt="site-logo" class="header__logo">
+            </a>
+          </div>
+
+          <div class="col-8">
+            <ul class="nav__list d-flex align-items-center justify-content-center">
+              <li class="nav__item"><a class="nav__link text" href="#">Overview</a></li>
+              <li class="nav__item"><a class="nav__link text" href="#">Contagion</a></li>
+              <li class="nav__item"><a class="nav__link text" href="#">Prevention</a></li>
+              <li class="nav__item"><a class="nav__link text" href="#">Treatment</a></li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <ul class="nav__sotial d-flex justify-content-center">
+              <li class="nav__item"><a href="#" class="sotial__link"><img src="/img/facebook.svg" alt="icon-facebook"
+                    class="sotial__image"></a></li>
+              <li class="nav__item"><a href="#" class="sotial__link"><img src="/img/youtube.svg" alt="icon-youtube"
+                    class="sotial__image"></a></li>
+              <li class="nav__item"><a href="#" class="sotial__link"><img src="/img/vimeo.svg" alt="icon-vimeo"
+                    class="sotial__image"></a></li>
+              <li class="nav__item"><a href="#" class="sotial__link"><img src="/img/twitter.svg" alt="icon-twitter"
+                    class="sotial__image"></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="text-center">
+        <p class="footer__copyright text">2020 @ All rights reserved by pixelspark.co</p>
+      </div>
+    </div>
+  </footer>
+
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
